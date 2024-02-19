@@ -1,0 +1,49 @@
+.listImagesForServices {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.ourMissionWrapper {
+  display: flex;
+  align-items: top;
+  justify-content: flex-end;
+}
+.quotes {
+  border-radius: 50%;
+  background-color: white;
+}
+.ourMissionImage {
+  border-radius: 15px;
+  position: absolute;
+  top: -55px;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.OurMissionContent {
+  height: 360px;
+}
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  .ourMissionWrapper {
+    justify-content: center;
+  }
+  .OurMissionContent {
+    height: auto;
+  }
+  .ourMissionImage {
+    position: relative;
+    top: 0px;
+  }
+  .listImagesForServices {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .listImagesForServices {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}

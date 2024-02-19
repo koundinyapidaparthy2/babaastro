@@ -1,0 +1,11 @@
+.headerLogoImages {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.finalService {
+  margin-right: 14px !important;
+}
