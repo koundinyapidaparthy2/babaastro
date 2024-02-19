@@ -297,7 +297,7 @@ const Contact = () => {
                 loading="lazy"
                 allowfullscreen=""
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsh6yJba2R7lA-Varqc1qL9--6Xgmdi_w&amp;q=2464 Grand Concourse, NY 10458"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsh6yJba2R7lA-Varqc1qL9--6Xgmdi_w&amp;q=114 E Fordham Rd, Bronx, NY 10468"
                 style={{ borderRadius: "15px", border: "0px" }}
               ></iframe>
             </Grid>
