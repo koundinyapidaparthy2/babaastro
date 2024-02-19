@@ -102,7 +102,7 @@ const Footer = () => {
                       cursor: "pointer",
                     }}
                   >
-                    895-143-6199
+                    +1 895-143-6199
                   </Link>
                 </Typography>
               </Grid>
