@@ -1,6 +1,6 @@
 const servicesList = [
   {
-    src: "./images/GetLove.jpg",
+    src: "./images/Love.jpg",
     title: "Get Your Love Back",
     content:
       "When you love somebody but the person is not around you, that feeling is heartbreaking. Let love problems be the thing you dont have to worry about.",
