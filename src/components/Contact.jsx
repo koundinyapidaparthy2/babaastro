@@ -12,6 +12,7 @@ import {
 import { styled } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
 import { useLocation } from "react-router-dom";
+import Link from "@mui/material/Link";
 import Footer from "./Footer";
 
 const blue = {
@@ -271,7 +272,18 @@ const Contact = () => {
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Button>895-143-6199</Button>
+                  <Button>
+                    <Link
+                      href="tel:+18951436199"
+                      color={"primary"}
+                      sx={{
+                        textDecoration: "none",
+                        cursor: "pointer",
+                      }}
+                    >
+                      +1 895-143-6199
+                    </Link>
+                  </Button>
                 </Grid>
               </Grid>
             </Grid>

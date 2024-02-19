@@ -6,8 +6,15 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CallRoundedIcon from "@mui/icons-material/CallRounded";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import { useNavigate } from "react-router-dom";
+import Link from "@mui/material/Link";
 const Footer = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
+  const handleRouteChange = (value) => {
+    navigate(`/${value}`);
+  };
+
   return (
     <Grid
       container
@@ -40,7 +47,16 @@ const Footer = () => {
                     <InstagramIcon color="primary" />
                   </Grid>
                   <Grid item>
-                    <CallRoundedIcon color="primary" />
+                    <Link
+                      href="tel:+18951436199"
+                      color={"primary"}
+                      sx={{
+                        textDecoration: "none",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <CallRoundedIcon color="primary" />
+                    </Link>
                   </Grid>
                   <Grid item>
                     <YouTubeIcon color="primary" />
@@ -62,12 +78,32 @@ const Footer = () => {
               </Grid>
               <Grid item xs={12}>
                 <Typography variant="subtitle2" color={"primary"}>
-                  2464 Grand Concourse, NY 10458
+                  <Link
+                    href="https://maps.google.com/?q=114+E+Fordham+Rd,+Bronx,+NY+10468"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color={"primary"}
+                    sx={{
+                      textDecoration: "none",
+                      cursor: "pointer",
+                    }}
+                  >
+                    114 E Fordham Rd, Bronx, NY 10468
+                  </Link>
                 </Typography>
               </Grid>
               <Grid item xs={12}>
                 <Typography variant="subtitle2" color={"primary"}>
-                  895-143-6199
+                  <Link
+                    href="tel:+18951436199"
+                    color={"primary"}
+                    sx={{
+                      textDecoration: "none",
+                      cursor: "pointer",
+                    }}
+                  >
+                    895-143-6199
+                  </Link>
                 </Typography>
               </Grid>
             </Grid>
@@ -84,17 +120,29 @@ const Footer = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="subtitle2" color={"primary"}>
+                <Typography
+                  variant="subtitle2"
+                  color={"primary"}
+                  onClick={() => handleRouteChange("about")}
+                >
                   About
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="subtitle2" color={"primary"}>
+                <Typography
+                  variant="subtitle2"
+                  color={"primary"}
+                  onClick={() => handleRouteChange("services")}
+                >
                   Our Services
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="subtitle2" color={"primary"}>
+                <Typography
+                  variant="subtitle2"
+                  color={"primary"}
+                  onClick={() => handleRouteChange("contact")}
+                >
                   Contact Us
                 </Typography>
               </Grid>
